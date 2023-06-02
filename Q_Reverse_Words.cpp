@@ -17,19 +17,56 @@ int main()
     ss << s;
     string word;
 
+    ss>> word;
+    reverse(word.begin(),word.end());  
+    cout << word;
+
     bool f = true;
 
     while(ss>>word)
     {
         reverse(word.begin(),word.end());   
-        if(f==true) cout << word;
-        else cout << " " << word;
-        f = false;
-
+        cout << " " << word;
     } 
     return 0;
 }
 
+//-----------------------------------------------------------------------------
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// #define FIO                       \
+//     ios_base::sync_with_stdio(0); \
+//     cin.tie(0);                   \
+//     cout.tie(0);
+
+// int main()
+// {
+//     FIO;
+//     string s;
+
+//     getline(cin,s);
+
+//     stringstream ss;
+//     ss << s;
+//     string word;
+
+//     bool f = true;
+
+//     while(ss>>word)
+//     {
+//         reverse(word.begin(),word.end());   
+//         if(f==true) cout << word;
+//         else cout << " " << word;
+//         f = false;
+
+//     } 
+//     return 0;
+// }
+
+
+//--------------------------------------------------------------------------
 
 
 // #include <bits/stdc++.h>
