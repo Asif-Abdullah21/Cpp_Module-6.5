@@ -12,30 +12,64 @@ int main()
     string s;
 
     getline(cin,s);
-    string s1=s;
 
     stringstream ss;
     ss << s;
     string word;
-    int cnt=0;
+
+    bool f = true;
 
     while(ss>>word)
     {
-        cnt++;
-    } 
-
-    stringstream ss1;
-    ss1 << s1;
-
-    while(ss1>>word)
-    {
         reverse(word.begin(),word.end());   
-        cout << word;
-        cnt--;
-        if(cnt>0) cout << " ";
+        if(f==true) cout << word;
+        else cout << " " << word;
+        f = false;
+
     } 
     return 0;
 }
+
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// #define FIO                       \
+//     ios_base::sync_with_stdio(0); \
+//     cin.tie(0);                   \
+//     cout.tie(0);
+
+// int main()
+// {
+//     FIO;
+//     string s;
+
+//     getline(cin,s);
+//     string s1=s;
+
+//     stringstream ss;
+//     ss << s;
+//     string word;
+//     int cnt=0;
+
+//     while(ss>>word)
+//     {
+//         cnt++;
+//     } 
+
+//     stringstream ss1;
+//     ss1 << s1;
+
+//     while(ss1>>word)
+//     {
+//         reverse(word.begin(),word.end());   
+//         cout << word;
+//         cnt--;
+//         if(cnt>0) cout << " ";
+//     } 
+//     return 0;
+// }
 
 
 
