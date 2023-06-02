@@ -21,8 +21,6 @@ int main()
     reverse(word.begin(),word.end());  
     cout << word;
 
-    bool f = true;
-
     while(ss>>word)
     {
         reverse(word.begin(),word.end());   
