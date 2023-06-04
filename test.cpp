@@ -21,13 +21,13 @@ using namespace std;
 int main()
 {
     FIO;
-    cout << isalpha('A') << endl; 
-    cout << isalpha('a') << endl; 
+    cout << isalpha('A') << endl; //boro hater - 1 
+    cout << isalpha('a') << endl; //choto hater - 2
     cout << isalpha('B') << endl; 
     cout << isalpha('b') << endl; 
     cout << isalpha('C') << endl; 
     cout << isalpha('c') << endl; 
-    cout << isalpha('!') << endl; 
+    cout << isalpha('!') << endl; //alphabet na hoile 0 
 
     return 0;
 }
